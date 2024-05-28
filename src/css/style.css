@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Roboto' sans-serif;
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    height: 110px;
+}
+
+.info h1 {
+    color: white;
+    font-weight: 900;
+}
+
+.info p {
+    margin-top: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+form {
+    width: 340px;
+    height: 440px;
+    background-color: white;
+    margin: 100px;
+    position: relative;
+}
+
+form .input {
+    margin: 10px 0px -5px 15px;
+    width: 300px;
+    height: 35px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+form .input::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.input.mensagem {
+    height: 100px;
+}
+
+.legenda {
+    margin-top: 10px;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.btn-enviar{
+    height: 40px;
+    width: 300px;
+    background-color: #3ccc87;
+    color: white;
+    margin: 10px;
+    border-width: 0;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+span {
+    font-weight: 400;
+    font-size: 8px;
+    margin-left: 15px;
+    color: #F52E2E;
+    visibility: hidden;
+}
+
+/* ESTILOS DE ITEM DOS inputs ATIVOS */
+
+.invalid {
+    border-color: #F52E2E;
+}
+
+.error-msg {
+    visibility: visible;
+}
+
+.verified {
+    border-color: #3ccc87;
+}
